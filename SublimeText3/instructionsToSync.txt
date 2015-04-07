@@ -1,0 +1,21 @@
+https://packagecontrol.io/docs/syncing#dropbox-osx
+
+This project is backed up by OS X host machine. Please follow Other Machine(s) instructions.
+
+Close Sublime Text
+Open Terminal
+
+--------------------------------------------------------------------------------
+First Machine: On your first machine, use the following instructions for SUBLIME TEXT 3
+
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+mkdir ~/Dropbox/Developer/EnvImprovements/SublimeText3
+mv User ~/Dropbox/Developer/EnvImprovements/SublimeText3/
+ln -s ~/Dropbox/Developer/EnvImprovements/SublimeText3/User
+
+--------------------------------------------------------------------------------
+Other Machine(s): On your other machine(s), use the following instructions. These instructions will remove your User/ folder and all contents! For SUBLIME TEXT 3
+
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+rm -r User
+ln -s ~/Dropbox/Developer/EnvImprovements/SublimeText3/User
